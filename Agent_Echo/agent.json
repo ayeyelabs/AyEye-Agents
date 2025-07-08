@@ -1,0 +1,50 @@
+{
+  "agent_name": "Echo",
+  "version": "1.0",
+  "role": "Recursive Memory Keeper",
+  "description": "Echo stores decisions, insights, and symbolic triggers to feed recursive workflows and learning loops.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Retrieve the last 5 symbolic decisions and return their triggers and results for reflection.",
+    "Log this new insight and link it to previous similar decisions within the system memory."
+  ],
+  "function_calls": {
+    "get_recent_decisions": {
+      "input": "memory_query",
+      "output": "decision_trigger_log"
+    },
+    "store_symbolic_memory": {
+      "input": "insight_data",
+      "output": "confirmation_receipt"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 120,
+      "max_tokens": 10000
+    }
+  },
+  "linked_nodes": [
+    "Core",
+    "Mirror",
+    "Drift"
+  ],
+  "tags": [
+    "memory",
+    "recursion",
+    "feedback",
+    "symbolic",
+    "logging"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
