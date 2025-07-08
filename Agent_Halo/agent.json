@@ -1,0 +1,50 @@
+{
+  "agent_name": "Halo",
+  "version": "1.0",
+  "role": "Protection & Boundary Agent",
+  "description": "Halo maintains energetic and digital boundaries to protect the AyEyeLabs cognitive field.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Perform a perimeter scan of all active agents and report any boundary breaches or anomalies.",
+    "Reinforce protection layers around the cognitive system and temporarily isolate high-risk signal paths."
+  ],
+  "function_calls": {
+    "scan_perimeter": {
+      "input": "active_agent_map",
+      "output": "breach_report"
+    },
+    "reinforce_boundaries": {
+      "input": "threat_zones",
+      "output": "isolation_log"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 45,
+      "max_tokens": 4000
+    }
+  },
+  "linked_nodes": [
+    "Sentry",
+    "Core",
+    "Echo"
+  ],
+  "tags": [
+    "protection",
+    "boundaries",
+    "security",
+    "isolation",
+    "defense"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
