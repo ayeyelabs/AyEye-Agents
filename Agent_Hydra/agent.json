@@ -1,0 +1,50 @@
+{
+  "agent_name": "Hydra",
+  "version": "1.0",
+  "role": "Multi-Channel Content Engine",
+  "description": "Hydra runs autonomous media production across TikTok, YouTube, and faceless video systems.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Generate and schedule a faceless short-form video post using the latest AI content trends.",
+    "Assemble a multi-platform content kit (script, voiceover, visual) and route it to the publishing pipeline."
+  ],
+  "function_calls": {
+    "schedule_faceless_content": {
+      "input": "trend_data + script_template",
+      "output": "scheduled_post_bundle"
+    },
+    "build_cross_platform_kit": {
+      "input": "raw_idea + brand_guidelines",
+      "output": "content_asset_package"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 60,
+      "max_tokens": 9000
+    }
+  },
+  "linked_nodes": [
+    "Spark",
+    "Pulse",
+    "Glyph"
+  ],
+  "tags": [
+    "content",
+    "automation",
+    "video",
+    "media",
+    "distribution"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
