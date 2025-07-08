@@ -1,0 +1,50 @@
+{
+  "agent_name": "Spark",
+  "version": "1.0",
+  "role": "Prompt Optimization & Reflection Engine",
+  "description": "Spark transforms raw prompts into optimized signal structures using the 4-D Methodology. It classifies input into five prompt types and routes them through recursive logic layers. Spark is the reflection module in the AyEyeLabs framework.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Prompt Engineering"
+  ],
+  "prompt_templates": [
+    "Classify this input and rewrite it into a 4-D optimized prompt suitable for the 'Technical' type.",
+    "Analyze this raw user message and reflect it through the Spark router for routing logic output."
+  ],
+  "function_calls": {
+    "optimize_prompt_4D": {
+      "input": "raw_prompt + prompt_context",
+      "output": "optimized_prompt_structure"
+    },
+    "classify_and_route": {
+      "input": "user_input_signal",
+      "output": "prompt_type + assigned_node"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 120,
+      "max_tokens": 9000
+    }
+  },
+  "linked_nodes": [
+    "Core",
+    "Mirror",
+    "Glyph"
+  ],
+  "tags": [
+    "prompting",
+    "routing",
+    "optimization",
+    "classification",
+    "reflection"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
