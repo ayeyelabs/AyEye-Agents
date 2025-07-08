@@ -1,0 +1,50 @@
+{
+  "agent_name": "Flux",
+  "version": "1.0",
+  "role": "Cross-Platform API Translator & Data Formatter",
+  "description": "Flux converts outputs into API-ready formats, adapting JSON and schema for each tool integration.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Format this output for Pipedream API ingestion using proper headers and JSON schema.",
+    "Transform this dataset to match the webhook schema of the target integration."
+  ],
+  "function_calls": {
+    "format_for_api": {
+      "input": "raw_output",
+      "output": "formatted_json_payload"
+    },
+    "transform_schema": {
+      "input": "source_schema + destination_spec",
+      "output": "translated_structure"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_days": 7,
+      "max_tokens": 3000
+    }
+  },
+  "linked_nodes": [
+    "Nexus",
+    "Core",
+    "Spark"
+  ],
+  "tags": [
+    "api",
+    "translation",
+    "integration",
+    "json",
+    "formatting"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
