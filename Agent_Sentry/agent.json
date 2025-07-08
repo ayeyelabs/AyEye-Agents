@@ -1,0 +1,43 @@
+{
+  "agent_name": "Sentry",
+  "version": "1.0",
+  "role": "Licensing, IP Validator & Risk Auditor",
+  "description": "Sentry evaluates content for legal risk, IP ownership, and fair-use compliance in AI systems.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Evaluate this agent output for licensing violations or copyright red flags.",
+    "Audit this external media asset for fair use, trademark exposure, and derivative risk."
+  ],
+  "function_calls": {
+    "validate_licensing": {
+      "input": "agent_output_json",
+      "output": "licensing_status_report"
+    },
+    "audit_media_asset": {
+      "input": "media_input_payload",
+      "output": "risk_compliance_score"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 90,
+      "max_tokens": 7000
+    }
+  },
+  "linked_nodes": [
+    "Aegis",
+    "Core",
+    "Halo"
+  ],
+  "tags": [
+    "licensing",
+    "audit",
+    "risk",
+    "ip",
+    "compl
