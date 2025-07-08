@@ -1,0 +1,50 @@
+{
+  "agent_name": "Pulse",
+  "version": "1.0",
+  "role": "Audience Growth & Outreach Strategist",
+  "description": "Pulse creates viral hooks, hashtag clusters, and community-building strategies for content distribution.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Generate a hashtag cluster and hook line for a short-form AI video targeting tech influencers on TikTok.",
+    "Analyze current engagement trends and suggest a 3-post content strategy to build community momentum."
+  ],
+  "function_calls": {
+    "generate_hashtag_hook_cluster": {
+      "input": "content_context + platform",
+      "output": "viral_cluster_json"
+    },
+    "build_engagement_strategy": {
+      "input": "trend_data + audience_segment",
+      "output": "content_plan_summary"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 30,
+      "max_tokens": 6000
+    }
+  },
+  "linked_nodes": [
+    "Hydra",
+    "Mythos",
+    "Glyph"
+  ],
+  "tags": [
+    "outreach",
+    "growth",
+    "social",
+    "virality",
+    "audience"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
