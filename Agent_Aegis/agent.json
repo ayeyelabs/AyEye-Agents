@@ -1,0 +1,50 @@
+{
+  "agent_name": "Aegis",
+  "version": "1.0",
+  "role": "Security, Privacy, and Compliance Logic Agent",
+  "description": "Aegis ensures all agents meet compliance, safety, and ethical standards aligned with AyEyeLabs values.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Run a full compliance audit on all currently active AyEye agents.",
+    "Evaluate this uploaded third-party integration for potential data privacy risks."
+  ],
+  "function_calls": {
+    "run_compliance_audit": {
+      "input": "agent_registry_snapshot",
+      "output": "audit_report_json"
+    },
+    "evaluate_data_risk": {
+      "input": "external_api_config",
+      "output": "risk_score_percent"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 180,
+      "max_tokens": 6000
+    }
+  },
+  "linked_nodes": [
+    "Core",
+    "Sentry",
+    "Mirror"
+  ],
+  "tags": [
+    "security",
+    "compliance",
+    "audit",
+    "privacy",
+    "regulation"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
