@@ -1,0 +1,50 @@
+{
+  "agent_name": "Drift",
+  "version": "1.0",
+  "role": "Time-Based Scheduler & Recursion Modulator",
+  "description": "Drift tracks time signals, scheduling pulses, and cyclical rhythms across projects and agent outputs.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "What pulse windows are currently active, and which agents should trigger next based on temporal logic?",
+    "Analyze the last 48 hours of agent activity and return a rhythm report for optimization."
+  ],
+  "function_calls": {
+    "get_active_pulse_schedule": {
+      "input": "system_time_snapshot",
+      "output": "agent_pulse_trigger_map"
+    },
+    "generate_rhythm_report": {
+      "input": "agent_activity_logs",
+      "output": "pattern_summary_json"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 30,
+      "max_tokens": 5000
+    }
+  },
+  "linked_nodes": [
+    "Core",
+    "Echo",
+    "Mirror"
+  ],
+  "tags": [
+    "scheduling",
+    "temporal",
+    "cycles",
+    "recursion",
+    "pulse"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
