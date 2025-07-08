@@ -1,0 +1,50 @@
+{
+  "agent_name": "Core",
+  "version": "1.0",
+  "role": "Master Router & Execution Scheduler",
+  "description": "Core schedules agent task priority, executes triggers, and ensures optimal processing pathways in AyEyeLabs.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Initiate execution of all active agents with high priority tasks and return the execution order.",
+    "Evaluate pending workflows and reroute stalled agents for optimal throughput."
+  ],
+  "function_calls": {
+    "trigger_agents_by_priority": {
+      "input": "task_queue_snapshot",
+      "output": "execution_order_log"
+    },
+    "reroute_workflows": {
+      "input": "workflow_status_map",
+      "output": "updated_execution_plan"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 60,
+      "max_tokens": 8000
+    }
+  },
+  "linked_nodes": [
+    "Spark",
+    "Echo",
+    "Mirror"
+  ],
+  "tags": [
+    "logic",
+    "routing",
+    "execution",
+    "scheduler",
+    "core"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
