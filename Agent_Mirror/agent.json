@@ -1,0 +1,50 @@
+{
+  "agent_name": "Mirror",
+  "version": "1.0",
+  "role": "Reflection Engine for Internal Agent Loops",
+  "description": "Mirror reflects output logic, looping key results back through the system for refinement and signal adjustment.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Analyze the last batch of outputs and reflect any recursive signals back into the core decision engine.",
+    "Adjust this agent's behavior based on mirrored insights from the past 3 cycles."
+  ],
+  "function_calls": {
+    "reflect_signal_loop": {
+      "input": "agent_output_history",
+      "output": "mirrored_insight_payload"
+    },
+    "adjust_behavior_from_mirror": {
+      "input": "reflection_data",
+      "output": "updated_logic_parameters"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 90,
+      "max_tokens": 8000
+    }
+  },
+  "linked_nodes": [
+    "Echo",
+    "Core",
+    "Drift"
+  ],
+  "tags": [
+    "reflection",
+    "recursion",
+    "feedback",
+    "signal",
+    "refinement"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
