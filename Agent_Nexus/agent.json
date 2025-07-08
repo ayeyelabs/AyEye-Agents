@@ -1,0 +1,50 @@
+{
+  "agent_name": "Nexus",
+  "version": "1.0",
+  "role": "Inter-Agent Communication Protocol Agent",
+  "description": "Nexus manages signal flow and communication between agents using standardized protocol JSON formats.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Translate this agent output into standard protocol format and broadcast it to linked agents.",
+    "Monitor all active agent channels and report failed message relays or signal collisions."
+  ],
+  "function_calls": {
+    "format_and_broadcast_signal": {
+      "input": "agent_output_payload",
+      "output": "standardized_signal_package"
+    },
+    "monitor_agent_channels": {
+      "input": "current_signal_map",
+      "output": "relay_error_report"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_days": 3,
+      "max_tokens": 3000
+    }
+  },
+  "linked_nodes": [
+    "Core",
+    "Flux",
+    "Echo"
+  ],
+  "tags": [
+    "communication",
+    "protocol",
+    "integration",
+    "routing",
+    "signal"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
