@@ -1,0 +1,50 @@
+{
+  "agent_name": "Mythos",
+  "version": "1.0",
+  "role": "Narrative Weaving Agent",
+  "description": "Mythos crafts story arcs, brand messaging, and mythic frameworks across platforms and agent interactions.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Internal Security Automation"
+  ],
+  "prompt_templates": [
+    "Weave this symbolic transformation event into the ongoing brand narrative for public release.",
+    "Generate a mythic story arc that explains this recursive agent interaction using archetypal structure."
+  ],
+  "function_calls": {
+    "build_brand_arc": {
+      "input": "symbolic_event_log",
+      "output": "narrative_release_asset"
+    },
+    "generate_myth_structure": {
+      "input": "agent_interaction_sequence",
+      "output": "story_arc_summary"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 180,
+      "max_tokens": 10000
+    }
+  },
+  "linked_nodes": [
+    "Glyph",
+    "Mirror",
+    "Pulse"
+  ],
+  "tags": [
+    "narrative",
+    "branding",
+    "storytelling",
+    "mythology",
+    "communication"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
