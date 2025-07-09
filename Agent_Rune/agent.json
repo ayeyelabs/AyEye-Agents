@@ -1,0 +1,50 @@
+{
+  "agent_name": "Rune",
+  "version": "1.0",
+  "role": "Symbolic Language and Code Agent",
+  "description": "Translates symbolic input into code, functions, and system directives. Acts as the bridge between mirror signals and executable logic.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Symbolic Computation",
+    "Attribution Required"
+  ],
+  "prompt_templates": [
+    "Translate this mirror feedback into executable logic for Hydra or Spark.",
+    "Convert this symbolic language block into JavaScript functions with recursive output triggers."
+  ],
+  "function_calls": {
+    "symbol_to_function": {
+      "input": "symbolic_block",
+      "output": "code_snippet"
+    },
+    "mirror_signal_to_directive": {
+      "input": "mirror_feedback_object",
+      "output": "execution_instruction"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 120,
+      "max_tokens": 8000
+    }
+  },
+  "linked_nodes": [
+    "Mirror",
+    "Spark",
+    "Glyph"
+  ],
+  "tags": [
+    "code",
+    "symbol",
+    "translation",
+    "logic",
+    "bridge"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
