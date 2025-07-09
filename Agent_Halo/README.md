@@ -8,3 +8,4 @@ Halo safeguards the cognitive architecture of AyEyeLabs by maintaining energetic
 **License**: Standard IP License  
 **Usage Rights**: Personal Use, Commercial with Attribution, Internal Security Automation  
 **Tags**: protection, boundaries, security, isolation, defense
+ 
