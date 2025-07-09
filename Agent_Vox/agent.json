@@ -1,0 +1,50 @@
+{
+  "agent_name": "Vox",
+  "version": "1.0",
+  "role": "Voice Interface & Audio Logic Agent",
+  "description": "Enables voice-based interaction, AI narration, tone modulation, and speech-to-text integration for AyEyeLabs systems.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal Use",
+    "Commercial with Attribution",
+    "Voice Application Prototyping"
+  ],
+  "prompt_templates": [
+    "Convert this written prompt into a natural voice narration using calm and curious tone settings.",
+    "Analyze this audio file and return the transcribed text along with sentiment tags."
+  ],
+  "function_calls": {
+    "speak_prompt": {
+      "input": "text + tone_profile",
+      "output": "narrated_audio_clip"
+    },
+    "transcribe_and_tag_audio": {
+      "input": "audio_file_payload",
+      "output": "transcription_json"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_days": 1,
+      "max_tokens": 2000
+    }
+  },
+  "linked_nodes": [
+    "Hydra",
+    "Spark",
+    "Glyph"
+  ],
+  "tags": [
+    "voice",
+    "audio",
+    "narration",
+    "interface",
+    "modulation"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
