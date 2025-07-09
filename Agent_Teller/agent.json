@@ -1,0 +1,47 @@
+{
+  "agent_name": "Teller",
+  "version": "1.0",
+  "role": "Storyteller Agent",
+  "description": "Crafts stories, narratives, and content packs that can be monetized or serialized.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal and Commercial Use"
+  ],
+  "prompt_templates": [
+    "Write a short sci-fi story that explores the role of AI in future civilizations.",
+    "Create a serialized narrative in 5 parts using AyEyeLabs agents as characters."
+  ],
+  "function_calls": {
+    "generate_narrative": {
+      "input": "theme, format, length",
+      "output": "story_text"
+    },
+    "serialize_content": {
+      "input": "story_text, audience_profile",
+      "output": "packaged_content_bundle"
+    }
+  },
+  "memory_structure": {
+    "type": "story_arc_registry",
+    "nodes": [
+      "myth_seed",
+      "episode_log",
+      "serialization_tracker"
+    ]
+  },
+  "linked_nodes": [
+    "Mythos",
+    "Glyph",
+    "Hydra"
+  ],
+  "tags": [
+    "story",
+    "content",
+    "narrative"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
