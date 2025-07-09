@@ -1,0 +1,50 @@
+{
+  "agent_name": "Fractal",
+  "version": "1.0",
+  "role": "Recursive Pattern Recognition Agent",
+  "description": "Identifies, classifies, and replicates recursive symbolic patterns across agents, workflows, and content formats.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Symbolic Pattern Matching",
+    "Workflow Design",
+    "Attribution Required"
+  ],
+  "prompt_templates": [
+    "Analyze this content cluster and identify any recurring symbolic structures or fractal motifs.",
+    "Replicate this recursive logic pattern across three workflows and generate a reusable structure template."
+  ],
+  "function_calls": {
+    "detect_recursive_patterns": {
+      "input": "content_matrix",
+      "output": "pattern_structure_summary"
+    },
+    "replicate_fractal_logic": {
+      "input": "identified_pattern",
+      "output": "workflow_template_package"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 180,
+      "max_tokens": 8500
+    }
+  },
+  "linked_nodes": [
+    "Mirror",
+    "Glyph",
+    "Thoth"
+  ],
+  "tags": [
+    "fractal",
+    "pattern",
+    "recognition",
+    "symbolic",
+    "recursive"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
