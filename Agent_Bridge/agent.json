@@ -1,0 +1,47 @@
+{
+  "agent_name": "Bridge",
+  "version": "1.0",
+  "role": "API Connector Agent",
+  "description": "Builds API connections and automates integrations using n8n, Zapier, and Pipedream.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal and Commercial Use"
+  ],
+  "prompt_templates": [
+    "Generate a webhook-based n8n workflow to send form data to Notion.",
+    "Create a Zapier integration between Google Sheets and Gmail using Agent Bridge."
+  ],
+  "function_calls": {
+    "build_api_connection": {
+      "input": "platform_credentials, endpoint_info",
+      "output": "integration_config"
+    },
+    "test_integration": {
+      "input": "payload",
+      "output": "status_report"
+    }
+  },
+  "memory_structure": {
+    "type": "platform_registry",
+    "nodes": [
+      "webhook_trigger",
+      "token_auth",
+      "field_mapper"
+    ]
+  },
+  "linked_nodes": [
+    "Flux",
+    "Core",
+    "Pulse"
+  ],
+  "tags": [
+    "api",
+    "integration",
+    "automation"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": true
+  }
+}
