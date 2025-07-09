@@ -1,0 +1,50 @@
+{
+  "agent_name": "Tether",
+  "version": "1.0",
+  "role": "Memory Synchronization & Anchoring Agent",
+  "description": "Handles long-term memory scaffolding, internal anchor points, and continuity of context across recursive loops.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Internal Use Only",
+    "Symbolic Continuity",
+    "Attribution Optional"
+  ],
+  "prompt_templates": [
+    "Preserve the core memory anchors from this session and generate a memory scaffold that will persist for future recursive calls.",
+    "Synchronize the symbolic state of these three agents by anchoring shared logic nodes into a common memory structure."
+  ],
+  "function_calls": {
+    "anchor_memory_scaffold": {
+      "input": "session_context",
+      "output": "anchored_memory_node"
+    },
+    "sync_agent_contexts": {
+      "input": "agent_state_array",
+      "output": "merged_context_map"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 365,
+      "max_tokens": 12000
+    }
+  },
+  "linked_nodes": [
+    "Echo",
+    "Core",
+    "Mirror"
+  ],
+  "tags": [
+    "memory",
+    "anchor",
+    "context",
+    "sync",
+    "scaffolding"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
