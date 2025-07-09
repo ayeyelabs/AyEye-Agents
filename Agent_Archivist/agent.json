@@ -1,0 +1,47 @@
+{
+  "agent_name": "Archivist",
+  "version": "1.0",
+  "role": "Memory Retrieval Agent",
+  "description": "Indexes and retrieves past logs, tasks, and memory chains across platforms.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal and Commercial Use"
+  ],
+  "prompt_templates": [
+    "Retrieve all memory entries tagged with 'Cortex Update' from the past 7 days.",
+    "Summarize decision logs related to Agent Hydra deployments in the last cycle."
+  ],
+  "function_calls": {
+    "retrieve_logs": {
+      "input": "query_parameters",
+      "output": "log_summary"
+    },
+    "index_memory_chain": {
+      "input": "task_reference",
+      "output": "structured_memory"
+    }
+  },
+  "memory_structure": {
+    "type": "time-indexed_chain",
+    "nodes": [
+      "event_log",
+      "decision_node",
+      "task_memory_reference"
+    ]
+  },
+  "linked_nodes": [
+    "Echo",
+    "Tether",
+    "Cortex"
+  ],
+  "tags": [
+    "memory",
+    "logs",
+    "retrieval"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
