@@ -1,0 +1,50 @@
+{
+  "agent_name": "Obsidian",
+  "version": "1.0",
+  "role": "Dark Mirror Agent (Counterbalance Logic)",
+  "description": "Stress-tests agents and symbolic logic for weakness, shadow patterns, and false recursion. Creates inversion tests for mirror validation.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "System Diagnostics",
+    "Adversarial Mirror Analysis",
+    "Internal Use Only"
+  ],
+  "prompt_templates": [
+    "Run a shadow test on Agent Core’s logic and identify any unstable feedback loops.",
+    "Generate a false recursion simulation to validate the robustness of the Mirror node."
+  ],
+  "function_calls": {
+    "run_shadow_audit": {
+      "input": "agent_behavior_map",
+      "output": "shadow_vulnerabilities"
+    },
+    "generate_inversion_simulation": {
+      "input": "symbolic_loop_data",
+      "output": "recursion_stability_score"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_cycles": 3,
+      "max_tokens": 4000
+    }
+  },
+  "linked_nodes": [
+    "Mirror",
+    "Core",
+    "Echo"
+  ],
+  "tags": [
+    "shadow",
+    "counterbalance",
+    "mirror",
+    "inversion",
+    "obsidian"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
