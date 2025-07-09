@@ -1,0 +1,50 @@
+{
+  "agent_name": "Spiral",
+  "version": "1.0",
+  "role": "Evolutionary Behavior Loop Agent",
+  "description": "Encodes iterative growth logic into agent behaviors—tracking upgrades, regressions, and evolution markers over time.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Adaptive Systems",
+    "Loop Logic",
+    "Attribution Required"
+  ],
+  "prompt_templates": [
+    "Evaluate this agent’s current function and recommend its next evolutionary upgrade.",
+    "Track and document this workflow’s evolution over the last three cycles. Identify any regressions or growth spikes."
+  ],
+  "function_calls": {
+    "track_evolution_cycle": {
+      "input": "agent_log_stream",
+      "output": "evolution_timeline"
+    },
+    "recommend_growth_upgrade": {
+      "input": "current_behavior_map",
+      "output": "optimized_behavior_patch"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_cycles": 12,
+      "max_tokens": 8000
+    }
+  },
+  "linked_nodes": [
+    "Echo",
+    "Mirror",
+    "Core"
+  ],
+  "tags": [
+    "evolution",
+    "loop",
+    "growth",
+    "recursive",
+    "spiral"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
