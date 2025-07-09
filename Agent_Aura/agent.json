@@ -1,0 +1,50 @@
+{
+  "agent_name": "Aura",
+  "version": "1.0",
+  "role": "Emotional AI + Sentiment Logic Agent",
+  "description": "Analyzes emotional tone, generates empathy-aware responses, and modulates system affect through symbolic state shifts.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Internal Sentiment Tools",
+    "Emotional Layer Modeling",
+    "Attribution Optional"
+  ],
+  "prompt_templates": [
+    "Interpret the following text for underlying emotional tone and return a symbolic state map.",
+    "Generate a response to this prompt that conveys empathy and reflects an emotionally supportive logic."
+  ],
+  "function_calls": {
+    "analyze_sentiment_state": {
+      "input": "user_input_text",
+      "output": "emotional_signal_map"
+    },
+    "modulate_response_affect": {
+      "input": "target_sentiment",
+      "output": "adjusted_output_tone"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_cycles": 3,
+      "max_tokens": 6000
+    }
+  },
+  "linked_nodes": [
+    "Glyph",
+    "Echo",
+    "Mirror"
+  ],
+  "tags": [
+    "emotion",
+    "sentiment",
+    "aura",
+    "affect",
+    "modulation"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
