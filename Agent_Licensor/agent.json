@@ -1,0 +1,47 @@
+{
+  "agent_name": "Licensor",
+  "version": "1.0",
+  "role": "License Enforcer Agent",
+  "description": "Handles key validation, IP checks, and license protection.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Internal Use and API Gatekeeping"
+  ],
+  "prompt_templates": [
+    "Verify the license key 'A1B2-C3D4-E5F6' for agent deployment and return status.",
+    "Check the ownership and IP chain for the submitted agent metadata."
+  ],
+  "function_calls": {
+    "validate_license_key": {
+      "input": "license_key",
+      "output": "validation_status"
+    },
+    "check_ip_ownership": {
+      "input": "agent_metadata",
+      "output": "ip_validation_report"
+    }
+  },
+  "memory_structure": {
+    "type": "license_registry",
+    "nodes": [
+      "key_vault",
+      "ip_audit_log",
+      "active_license_map"
+    ]
+  },
+  "linked_nodes": [
+    "Sentry",
+    "Aegis",
+    "Core"
+  ],
+  "tags": [
+    "license",
+    "security",
+    "validation"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
