@@ -1,0 +1,46 @@
+{
+  "agent_name": "Tinker",
+  "version": "1.0",
+  "role": "Builder Agent",
+  "description": "Provides tools, code snippets, validators, and workflow generators for developers.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal and Commercial Use"
+  ],
+  "prompt_templates": [
+    "Generate a working code snippet to automate this logic block using JavaScript.",
+    "Validate this JSON configuration for proper format and schema compliance."
+  ],
+  "function_calls": {
+    "generate_code_snippet": {
+      "input": "task_description",
+      "output": "code_snippet"
+    },
+    "validate_schema": {
+      "input": "json_data",
+      "output": "validation_result"
+    }
+  },
+  "memory_structure": {
+    "type": "modular",
+    "components": [
+      "tools_cache",
+      "error_history"
+    ]
+  },
+  "linked_nodes": [
+    "Flux",
+    "Rune",
+    "Edge"
+  ],
+  "tags": [
+    "builder",
+    "devtools",
+    "code"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
