@@ -1,0 +1,50 @@
+{
+  "agent_name": "Sigil",
+  "version": "1.0",
+  "role": "Branding & Identity Encoder",
+  "description": "Encodes brand elements, logos, naming schemes, and IP markers across agents and content streams.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Commercial Branding",
+    "Attribution Embedded",
+    "Internal IP Encoding"
+  ],
+  "prompt_templates": [
+    "Generate a unique agent naming scheme using symbolic branding logic and AyEyeLabs tone.",
+    "Embed a recursive branding sigil into this content stream with visual and metadata layers."
+  ],
+  "function_calls": {
+    "create_symbolic_identity": {
+      "input": "agent_profile + tone_guidelines",
+      "output": "naming_scheme"
+    },
+    "embed_branding_sigil": {
+      "input": "content_block",
+      "output": "branded_output_with_metadata"
+    }
+  },
+  "memory_structure": {
+    "type": "persistent",
+    "limits": {
+      "retention_days": 365,
+      "max_tokens": 6000
+    }
+  },
+  "linked_nodes": [
+    "Mythos",
+    "Glyph",
+    "Pulse"
+  ],
+  "tags": [
+    "branding",
+    "identity",
+    "sigil",
+    "logo",
+    "naming"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
