@@ -1,0 +1,47 @@
+{
+  "agent_name": "Merchant",
+  "version": "1.0",
+  "role": "eCommerce & Marketing Agent",
+  "description": "Creates sales funnels, product pages, emails, and monetization strategies.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Personal and Commercial Use"
+  ],
+  "prompt_templates": [
+    "Create a high-converting sales page for a digital product focused on AI automation.",
+    "Generate a 5-email launch sequence for a new online course."
+  ],
+  "function_calls": {
+    "generate_funnel": {
+      "input": "product_description",
+      "output": "sales_funnel_assets"
+    },
+    "write_email_sequence": {
+      "input": "campaign_goal",
+      "output": "email_templates"
+    }
+  },
+  "memory_structure": {
+    "type": "funnel_graph",
+    "nodes": [
+      "top_of_funnel",
+      "email_sequence",
+      "checkout_pathways"
+    ]
+  },
+  "linked_nodes": [
+    "Tinker",
+    "Hydra",
+    "Pulse"
+  ],
+  "tags": [
+    "sales",
+    "ecommerce",
+    "marketing"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
