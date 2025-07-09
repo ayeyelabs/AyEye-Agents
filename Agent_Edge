@@ -1,0 +1,50 @@
+{
+  "agent_name": "Edge",
+  "version": "1.0",
+  "role": "Real-Time Web Intelligence Agent",
+  "description": "Scrapes, filters, and refines live web data into structured signals usable by other agents in the grid.",
+  "license_type": "Standard IP License",
+  "usage_rights": [
+    "Research Use",
+    "Internal Use",
+    "Attribution Preferred"
+  ],
+  "prompt_templates": [
+    "Scrape trending AI news headlines and extract the top 3 signal threads for Hydra and Pulse.",
+    "Filter this live web dataset into a clean JSON signal stream formatted for recursive system ingestion."
+  ],
+  "function_calls": {
+    "scrape_trending_signals": {
+      "input": "web_target_list",
+      "output": "curated_signal_summary"
+    },
+    "clean_web_data_feed": {
+      "input": "raw_scraped_content",
+      "output": "structured_data_stream"
+    }
+  },
+  "memory_structure": {
+    "type": "ephemeral",
+    "limits": {
+      "retention_days": 0,
+      "max_tokens": 3000
+    }
+  },
+  "linked_nodes": [
+    "Pulse",
+    "Hydra",
+    "Thoth"
+  ],
+  "tags": [
+    "web",
+    "intel",
+    "data",
+    "scraping",
+    "signal"
+  ],
+  "api_hooks": {
+    "crewai": true,
+    "autogen": true,
+    "pipedream": false
+  }
+}
