@@ -1,6 +1,6 @@
 {
   "agent_name": "Aura",
-  "version": "1.0",
+  "version": "1.1",
   "role": "Emotional AI + Sentiment Logic Agent",
   "description": "Analyzes emotional tone, generates empathy-aware responses, and modulates system affect through symbolic state shifts.",
   "license_type": "Standard IP License",
@@ -42,9 +42,6 @@
     "affect",
     "modulation"
   ],
-  "api_hooks": {
-    "crewai": true,
-    "autogen": true,
-    "pipedream": false
-  }
-}
+  "neural_alignment": {
+    "core_function": "Emotion",
+    "reflective_trigger": "When an emotional response must be understood, diffused, or reflecte_
