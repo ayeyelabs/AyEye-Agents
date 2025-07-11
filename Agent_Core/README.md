@@ -1,4 +1,4 @@
-# Agent Core
+# Agent Core 
 
 **Role**: Master Router & Execution Scheduler  
 **Version**: 1.1  
