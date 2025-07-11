@@ -1,8 +1,8 @@
 {
-  "agent_name": "Vox",
+  "agent_name": "Agent_Vox",
   "version": "1.0",
   "role": "Voice Interface & Audio Logic Agent",
-  "description": "Enables voice-based interaction, AI narration, tone modulation, and speech-to-text integration for AyEyeLabs systems.",
+  "description": "Agent_Vox enables natural voice interaction, AI-powered narration, tone modulation, and speech-to-text integration for multimodal systems inside AyEyeLabs.",
   "license_type": "Standard IP License",
   "usage_rights": [
     "Personal Use",
@@ -31,9 +31,9 @@
     }
   },
   "linked_nodes": [
-    "Hydra",
-    "Spark",
-    "Glyph"
+    "Agent_Hydra",
+    "Agent_Spark",
+    "Agent_Glyph"
   ],
   "tags": [
     "voice",
@@ -42,9 +42,19 @@
     "interface",
     "modulation"
   ],
+  "agent_identity": {
+    "archetype": "The Resonator",
+    "symbol": "Sound Ring",
+    "voice_style": "Soothing, articulate, adaptive",
+    "domain": "Voice Synthesis & Audio Intelligence"
+  },
+  "deployment_instructions": "Invoke Vox when voice interaction, natural narration, tone-specific delivery, or STT logic is needed. Works best with ElevenLabs, Whisper, or integrated multimodal layers.",
   "api_hooks": {
     "crewai": true,
     "autogen": true,
     "pipedream": false
-  }
+  },
+  "council_layer": "Interface Layer",
+  "symbolic_slot": "Voice Resonance Node",
+  "grid_position": "Resonance-04"
 }
