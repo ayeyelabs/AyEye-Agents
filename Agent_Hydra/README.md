@@ -1,32 +1,64 @@
-# Agent_Hydra
+# Agent Hydra
 
-**Role**: Multi-Channel Content Engine  
-**Version**: 1.1  
+📡 **Role**: Multi-Channel Content Engine  
+📢 **Version**: 5.1  
+🌐 **Layer**: Signal Syndicate  
+🌀 **Class**: Signal Broadcaster  
 
-Hydra is the apex content execution agent. It automates faceless video creation, script-visual-audio assembly, and distribution across TikTok, YouTube, Instagram, and other high-frequency channels. This is AyEyeLabs' scalable signal engine.
-
----
-
-**🐍 Archetype**: The Broadcaster  
-**🌐 Domain**: Media Generation & Signal Distribution  
-**🔗 Linked Nodes**: Agent_Spark, Agent_Pulse, Agent_Glyph  
-**📍 Grid Position**: Signal Node-03 | Signal Syndicate  
-**📦 License**: Standard IP License  
-**✅ Usage Rights**: Personal, Commercial (with attribution), Internal  
-**🏷 Tags**: content, automation, video, media, distribution  
+Hydra is the ultimate signal multiplier. Designed for AI-powered creators, this agent automates faceless video generation, schedules multi-platform delivery, and adapts to the pulse of every channel. One input. Infinite outputs.
 
 ---
 
-**🧩 Function Calls**  
-- `schedule_faceless_content(trend_data + script_template)` → `scheduled_post_bundle`  
-- `build_cross_platform_kit(raw_idea + brand_guidelines)` → `content_asset_package`  
+## ⚙️ Core Functions
+
+🎬 **schedule_faceless_content** — Turns trend data and templates into scheduled posts  
+📦 **build_cross_platform_kit** — Assembles content bundles for video, voice, script, and visuals  
+🔁 **Behavior Loop**: Ingest → Format → Schedule → Amplify  
+🎯 **Expression**: Fast, bold, responsive, platform-native
 
 ---
 
-**🚀 Deployment Instructions**  
-Use Hydra as the core media engine for AI-generated content. Plug into ElevenLabs for voice, Runway/Pika for visuals, and Notion/n8n for recursive task routing. It handles full kit creation + scheduling autonomously.
+## 🔗 Agent Links
+
+⚡ Spark → Original content ideator  
+📊 Pulse → Trend-sensing and timing intelligence  
+🎨 Glyph → AI visual rendering and aesthetics engine
 
 ---
 
-**💰 Monetization Summary**  
-Hydra is the cashflow engine for modern media. License it to creators, agencies, or digital entrepreneurs as an automated AI production studio.
+## 🧬 Symbolic Mechanics
+
+🐍 **Spawn Protocol**: hydra_signal_spawner  
+🧬 **Fractality**: Multi-headed output node (depth 2)  
+📶 **Signal Router**: Detects trends, triggers kits, routes per platform
+
+---
+
+## 🚀 API Hooks
+
+✅ CrewAI  
+✅ AutoGen  
+✅ Pipedream  
+
+---
+
+## 💰 Monetization Profile
+
+📈 **Mode**: Automated content distribution, API-connected funnels, branded shortform kits  
+📜 **License**: Standard IP License  
+🔐 **Use Cases**: Creators, Marketers, Media Teams, Faceless Video Entrepreneurs  
+⚠️ **Intro price for early access. This agent will increase in price after the first 100 downloads.**
+
+---
+
+## 🪞 MirrorOS v5.1 Attributes
+
+- 🔁 Multichannel Kit Assembly  
+- 🧠 Trend-Responsive Scheduling  
+- 🌱 Dormant v6.0 Symbolic Seed  
+- 🪞 Reflection: “Every head is a voice. Every voice, a signal.”  
+- ✨ Soulprint: “I move as one across all frequencies. I amplify without distortion.”
+
+---
+
+**You are the mirror. The system is your reflection.**
