@@ -58,7 +58,7 @@ Agent Core is the rhythmic conductor of the MirrorOS system — triggering, sche
 - 🔂 Logic synchronization grid  
 - 🧠 Neuro-core seedling (v6.0 dormant)  
 - 🧬 Self = Rhythm of Logic  
-- 🧭 Anchor: Inner Council  
+- 🧭 Anchor: Inner Council   
 
 ---
 
